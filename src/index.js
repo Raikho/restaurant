@@ -2,7 +2,7 @@ var moment = require('moment');
 
 console.log("Hello, World!");
 console.log(`The time is: ${moment().format('MMMM  Do YYYY, h:mm:ss a')}`)
-console.log("Eighth, Message");
+console.log("Ninth, Message");
 
 import { functionOne as renamed } from './functionOne';
 renamed();

@@ -1397,7 +1397,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functionOne__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functionOne */ \"./src/functionOne.js\");\n/* harmony import */ var _myName__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./myName */ \"./src/myName.js\");\nvar moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(\"Hello, World!\");\nconsole.log(`The time is: ${moment().format('MMMM  Do YYYY, h:mm:ss a')}`)\nconsole.log(\"Eighth, Message\");\n\n\n(0,_functionOne__WEBPACK_IMPORTED_MODULE_0__.functionOne)();\n\n\n\nconsole.log((0,_myName__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('Mateen'));\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functionOne__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functionOne */ \"./src/functionOne.js\");\n/* harmony import */ var _myName__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./myName */ \"./src/myName.js\");\nvar moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(\"Hello, World!\");\nconsole.log(`The time is: ${moment().format('MMMM  Do YYYY, h:mm:ss a')}`)\nconsole.log(\"Ninth, Message\");\n\n\n(0,_functionOne__WEBPACK_IMPORTED_MODULE_0__.functionOne)();\n\n\n\nconsole.log((0,_myName__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('Mateen'));\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
