@@ -15,7 +15,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(\"Hello, World!\");\nconsole.log(`The time is: ${moment().format('MMMM  Do YYYY, h:mm:ss a')}`)\nconsole.log(\"Another, Message\");\n\n//# sourceURL=webpack://restaurant/./index.js?");
+eval("var moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n\nconsole.log(\"Hello, World!\");\nconsole.log(`The time is: ${moment().format('MMMM  Do YYYY, h:mm:ss a')}`)\nconsole.log(\"Seventh, Message\");\n\n//# sourceURL=webpack://restaurant/./index.js?");
 
 /***/ }),
 
