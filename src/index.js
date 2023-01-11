@@ -10,3 +10,5 @@ renamed();
 import myName from './myName';
 
 console.log(myName('Mateen'));
+
+import './style.css';
