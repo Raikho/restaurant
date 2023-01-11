@@ -5,5 +5,13 @@ module.exports = {
     output: {
         filename: 'main.js',
         publicPath: 'dist'
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
 };
