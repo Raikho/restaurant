@@ -1,9 +1,12 @@
 // webpack.config.js
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    devtool: 'inline-source-map',
+    entry: {
+        main: './src/index.js',
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].js',
         publicPath: 'dist'
     },
     module: {
