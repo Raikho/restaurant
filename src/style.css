@@ -19,6 +19,18 @@ body {
     background-image: url("../dist/vintage_paper.jpg");
     background-position: bottom;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container.header>.tab{
+    width: 80px;
+    padding: 5px;
+    border: 2px solid #0c4a6e;
+    text-align: center;
 }
 
 /* ============================== Main ============================= */
@@ -69,6 +81,8 @@ body {
 .heading {
     font-size: 32px;
 }
+
+li {list-style: none;}
 /* ============================= Footer ============================ */
 /* ================================================================= */
 
