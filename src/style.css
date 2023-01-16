@@ -14,7 +14,9 @@ body {
 /* ================================================================= */
 
 .container.header {
-    background-color: lightcoral;
+    background-image: url("../dist/vintage_paper.jpg");
+    background-position: bottom;
+    background-size: cover;
 }
 
 /* ============================== Main ============================= */
@@ -24,13 +26,13 @@ body {
     background-image: url("../dist/samosa_platter.jpg");
     background-position: center center;
     background-size: cover;
-    /* background: center; */
-
 }
 
 /* ============================= Footer ============================ */
 /* ================================================================= */
 
 .container.footer {
-    background-color: lightgreen;
+    background-image: url("../dist/vintage_paper.jpg");
+    background-position: top;
+    background-size: cover;
 }
