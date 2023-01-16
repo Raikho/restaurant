@@ -1,6 +1,7 @@
 body {
     background-color: darkslategray;
     color: darkblue;
+    font-size: 24px;
 
     width: 100vw;
     height: 100vh;
@@ -26,6 +27,23 @@ body {
     background-image: url("../dist/samosa_platter.jpg");
     background-position: center center;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content.main {
+    width: 500px;
+    height: 800px;
+
+    background-color: #ccc6;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* ============================= Footer ============================ */
