@@ -1,4 +1,32 @@
 body {
     background-color: darkslategray;
-    color: whitesmoke;
+    color: darkblue;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0;
+
+    display: grid;
+    grid-template-rows: 2fr 7fr 1fr;
+}
+
+/* ============================== Top ============================== */
+/* ================================================================= */
+
+.container.header {
+    background-color: lightcoral;
+}
+
+/* ============================== Main ============================= */
+/* ================================================================= */
+
+.container.main {
+    background-color: lightblue;
+}
+
+/* ============================= Footer ============================ */
+/* ================================================================= */
+
+.container.footer {
+    background-color: lightgreen;
 }
