@@ -30,8 +30,13 @@ body {
     width: 80px;
     padding: 5px;
     border: 2px solid #0c4a6e;
+    border-radius: 5px;
     text-align: center;
 }
+
+.tab[data-selected="true"] {background-color: goldenrod;}
+.tab[data-selected="false"]:hover {background-color:  #ffffff33;}
+.tab:active {backdrop-filter: brightness(1.25);}
 
 /* ============================== Main ============================= */
 /* ================================================================= */
@@ -69,17 +74,6 @@ body {
 
     border-radius: 15px;
     box-shadow: 4px 4px 8px #0003;;
-}
-
-.content.main>.TEST {
-    background-color: #ccc6;
-    padding: 30px;
-    width: 360px;
-    border-radius: 15px;
-
-    box-shadow: 4px 4px 8px #0003;;
-
-    text-align: center;
 }
 
 .title {
