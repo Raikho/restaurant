@@ -12,11 +12,8 @@ export default function getHomeContent() {
     content.push(element.create('div', ['card'], 'Samosa Hut has the best Samosas!'));
 
     // Hours
-    let div = document.createElement('div');
-    div.classList.add('card');
-    let subDiv = document.createElement('div');
-    subDiv.classList.add('heading');
-    subDiv.textContent = 'Hours';
+    let div = element.create('div', ['card'], '');
+    let subDiv = element.create('div', ['heading'], 'Hours');
     div.appendChild(subDiv);
     let hoursList = [
         'Sunday: 12am - 4pm',
@@ -27,22 +24,17 @@ export default function getHomeContent() {
         'Friday: 10am - 10pm',
         'Saturday: 10am - 10pm',
     ];
-    for (let i of hoursList) {
-        div.appendChild(document.createElement('li'));
-        div.lastChild.textContent = i;
-    }
+    for (let i of hoursList)
+        div.appendChild(element.create('li', [], i));
     content.push(div);
 
     // Location
-    div  = document.createElement('div');
-    div.classList.add('card');
-    subDiv = document.createElement('div');
-    subDiv.classList.add('heading');
-    subDiv.textContent = 'Location';
+    div = element.create('div', ['card']);
+    subDiv = element.create('div', ['heading'], 'Location');
     div.appendChild(subDiv);
-    subDiv = document.createElement('div');
-    subDiv.textContent = '9000 Central Ave, Manhattan, New York';
+    subDiv = element.create('div', [], '9000 Central Ave, Manhattan, New York');
     div.appendChild(subDiv);
+
     content.push(div);
 
     return content;
