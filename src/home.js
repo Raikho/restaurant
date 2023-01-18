@@ -9,7 +9,7 @@ export default function getHomeContent() {
     content.push(element.create('div', ['card', 'title'], 'Samosa Hut'));
 
     // Description
-    content.push(element.create('div', ['card'], 'Samosa Hut has the best Samosas!'));
+    content.push(element.create('div', ['card', 'smaller'], "Samosa Hut is home to the world's best Samosas. Hand crafted with the freshest ingredients, you won't find better Samosas anywhere else!"));
 
     // Hours
     let div = element.create('div', ['card'], '');
