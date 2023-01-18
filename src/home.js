@@ -1,22 +1,18 @@
+import {element} from './element.js';
+
 export default function getHomeContent() {
     console.log('Importing home stuff...');
 
     const content = [];
 
     // Title
-    let div  = document.createElement('div');
-    div.classList.add('card', 'title');
-    div.textContent = 'Samosa Hut';
-    content.push(div);
+    content.push(element.create('div', ['card', 'title'], 'Samosa Hut'));
 
     // Description
-    div = document.createElement('div');
-    div.classList.add('card');
-    div.textContent = 'Samosa Hut has the best Samosas!';
-    content.push(div);
+    content.push(element.create('div', ['card'], 'Samosa Hut has the best Samosas!'));
 
     // Hours
-    div = document.createElement('div');
+    let div = document.createElement('div');
     div.classList.add('card');
     let subDiv = document.createElement('div');
     subDiv.classList.add('heading');
