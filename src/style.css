@@ -54,7 +54,8 @@ body {
 
 .content.main {
     width: 500px;
-    height: 800px;
+    height: 700px;
+    overflow-y: scroll;
 
     background-color: #ccc3;
     border-radius: 15px;
@@ -62,9 +63,19 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     padding: 20px;
+    gap: 20px;
+}
+
+::-webkit-scrollbar {width: 20px;}
+::-webkit-scrollbar-track {background-color: transparent;}
+::-webkit-scrollbar-thumb {
+    background-color: #fff6;
+    border-radius: 20px;
+    border: 7px solid transparent;
+    background-clip: content-box;
 }
 
 .card {
@@ -86,6 +97,7 @@ body {
         "desc desc"
         "price pic";
     gap: 10px;
+    text-align: left;
 }
 .item>.itemName {
     grid-area: itemName;
@@ -96,7 +108,13 @@ body {
     font-size: 18px;
 }
 .item>.price {grid-area: price;}
-.item>.pic {grid-area: pic;}
+.item>.pic {
+    grid-area: pic;
+    justify-self: end;
+    width: 100px;
+    height: 100px;
+    background-color: #0c4a6e66;
+}
 
 
 .title {

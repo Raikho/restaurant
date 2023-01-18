@@ -14,11 +14,11 @@ export default function getMenuContent() {
 
     // Sides
     content.push(element.create('div', ['card', 'subtitle'], 'Sides'));
-    content.push(element.create('div', ['card'], 'Naan'));
+    content.push(element.createItem('Naan', 'Savory flatbread','$2', 'pic'));
 
     // Beverages
     content.push(element.create('div', ['card', 'subtitle'], 'Beverages'));
-    content.push(element.create('div', ['card'], 'Chai'));
+    content.push(element.createItem('Chai', 'A spiced black tea','$4', 'pic'));
 
     return content;
 }
