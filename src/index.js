@@ -1,5 +1,3 @@
-console.log("Hello, World! Try #: 5");
-
 const tabs = {
     home: {id: 'home'},
     menu: {id: 'menu'},
@@ -18,6 +16,8 @@ for (let [key, tab] of Object.entries(tabs)) {
                 value.node.dataset.selected = 'false';
             }
         });
+        clearContent();
+        addContent(tab);
     });
 }
 
@@ -80,11 +80,44 @@ y.textContent = '9000 Central Ave, Manhattan, New York';
 x.appendChild(y);
 tabs.home.content.push(x);
 
+// Add menu content
+tabs.menu.content = [];
+// Title
+x = document.createElement('div');
+x.classList.add('card', 'title');
+x.textContent = 'Menu';
+tabs.menu.content.push(x);
 
 
+// Add contact content
+tabs.contact.content = [];
+// Title
+x = document.createElement('div');
+x.classList.add('card', 'title');
+x.textContent = 'Contact Us';
+tabs.contact.content.push(x);
+// Manager
+x = document.createElement('div');
+x.classList.add('card');
+x.textContent = 'Manager';
+tabs.contact.content.push(x);
+// Chef
+x = document.createElement('div');
+x.classList.add('card');
+x.textContent = 'Chef';
+tabs.contact.content.push(x);
+// Waiter
+x = document.createElement('div');
+x.classList.add('card');
+x.textContent = 'Waiter';
+tabs.contact.content.push(x);
+
+
+// INIT
 clearContent();
 addContent(tabs.home);
 
+// DEBUG
 console.log(tabs);
 console.log(content);
 console.log(tabs.home.content);
