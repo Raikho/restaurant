@@ -6,12 +6,13 @@ const tabs = {
     contact: {id: 'contact'},
 };
 
-
-
 for (let [key, tab] of Object.entries(tabs)) {
+    // Setup nodes
     tab.node = document.getElementById(tab.id);
+    // Setup event listeners
     tab.node.addEventListener('click', () => {
         tab.node.dataset.selected = 'true';
+        // Unselect other tabs
         Object.entries(tabs).forEach(([key, value]) => {
             if (tab.id != value.id) {
                 value.node.dataset.selected = 'false';
@@ -20,16 +21,29 @@ for (let [key, tab] of Object.entries(tabs)) {
     });
 }
 
+content = {};
+content.node = document.getElementById('content');
 
-const homeNode = document.getElementById('home');
-const menuNode = document.getElementById('menu');
-const contactNode = document.getElementById('contact');
+function clearContent() {
+    while (content.node.hasChildNodes())
+        content.node.removeChild(content.node.firstChild);
+}
 
-// menuNode.addEventListener('click', () => {
-//     console.log('menu clicked');
-//     homeNode.dataset.selected = "false";
-//     menuNode.dataset.selected = "true";
-//     contactNode.dataset.selected = "false";
-// });
+function addContent(tab) {
+    for (let element of tab.content)
+        content.node.appendChild(element);
+}
+
+// Add home content;
+tabs.home.content = [];
+let x = document.createElement('div');
+x.classList.add('card', 'title');
+x.textContent = 'Samosa Hut';
+tabs.home.content.push(x);
+
+clearContent();
+addContent(tabs.home);
 
 console.log(tabs);
+console.log(content);
+console.log(tabs.home.content);
