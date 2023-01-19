@@ -111,9 +111,10 @@ body {
 .item>.pic {
     grid-area: pic;
     justify-self: end;
-    width: 100px;
+    width: 150px;
     height: 100px;
-    background-color: #0c4a6e66;
+    background-position: center;
+    background-size: cover;
 }
 
 

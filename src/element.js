@@ -1,3 +1,5 @@
+// import samosa from './assets/samosa.jpg';
+
 const element = {
     create: function(type, classes, text) {
         let out = document.createElement(type);
@@ -6,7 +8,7 @@ const element = {
         out.textContent = text;
         return out;
     },
-    createItem: function(name, desc, price, pic) {
+    createItem: function(name, desc, price, picUrl) {
         let div = this.create('div', ['card', 'item']);
         let subDiv = this.create('div', ['itemName'], name);
         div.appendChild(subDiv);
@@ -14,7 +16,9 @@ const element = {
         div.appendChild(subDiv);
         subDiv = this.create('div', ['price'], price);
         div.appendChild(subDiv);
-        subDiv = this.create('div', ['pic'], pic);
+        subDiv = this.create('div', ['pic']);
+        subDiv.style.backgroundImage = "url('../src/assets/" + picUrl + "')";
+
         div.appendChild(subDiv);
         return div;
     },
