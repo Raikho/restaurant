@@ -47,7 +47,7 @@ tabs.contact.content = getContactContent();
 
 // INIT
 clearContent();
-addContent(tabs.menu); // Debug change back to default later
+addContent(tabs.contact); // Debug change back to default later
 
 // DEBUG
 console.log(tabs);

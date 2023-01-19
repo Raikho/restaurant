@@ -9,13 +9,13 @@ export default function getContactContent() {
     content.push(element.create('div', ['card', 'title'], 'Contact Us'));
 
     // Manager
-    content.push(element.create('div', ['card'], 'Manager'));
+    content.push(element.createContact('Mr. Manager', 'Manager', '555-555-551', 'managerEmail@domain.com'));
 
     // Chef
-    content.push(element.create('div', ['card'], 'Chef'));
+    content.push(element.createContact('Mr. Chef', 'Chef', '555-555-552', 'chefEmail@domain.com'));
 
     // Waiter
-    content.push(element.create('div', ['card'], 'Waiter'));
+    content.push(element.createContact('Mr. Chef', 'Waiter', '555-555-552', 'waiterEmail@domain.com'));
 
     return content;
 }

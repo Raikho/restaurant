@@ -115,7 +115,23 @@ body {
     height: 100px;
     background-position: center;
     background-size: cover;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px #0003;
 }
+
+.contact {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "contactName"
+        "contactPosition"
+        "contactNumber"
+        "contactEmail";
+}
+.contact>.contactName {grid-area: contactName;}
+.contact>.contactPosition {grid-area: contactPosition;}
+.contact>.contactNumber {grid-area: contactNumber;}
+.contact>.contactEmail {grid-area: contactEmail;}
 
 
 .title {
