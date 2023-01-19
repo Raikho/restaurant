@@ -120,19 +120,33 @@ body {
 }
 
 .contact {
+    text-align: left;
+
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-template-areas:
-        "contactName"
-        "contactPosition"
-        "contactNumber"
-        "contactEmail";
+        "contactName contactPicture"
+        "contactPosition contactPicture"
+        "contactNumber contactNumber"
+        "contactEmail contactEmail";
 }
 .contact>.contactName {grid-area: contactName;}
-.contact>.contactPosition {grid-area: contactPosition;}
-.contact>.contactNumber {grid-area: contactNumber;}
-.contact>.contactEmail {grid-area: contactEmail;}
+.contact>.contactPosition {grid-area: contactPosition; font-size: 16px;}
+.contact>.contactNumber {grid-area: contactNumber; font-size: 16px;}
+.contact>.contactEmail {grid-area: contactEmail; font-size: 16px;}
+.contact>.contactPicture {
+    grid-area: contactPicture;
+    justify-self: end;
+    width: 80px;
+    height: 80px;
+    background-image: url("../src/assets/managerProfile.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 80px;
+    box-shadow: 4px 4px 4px #0003;
 
+}
 
 .title {
     width: 360px;

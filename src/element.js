@@ -22,7 +22,7 @@ const element = {
         div.appendChild(subDiv);
         return div;
     },
-    createContact: function(name, position, number, email) {
+    createContact: function(name, position, number, email, picUrl) {
         let div = this.create('div', ['card', 'contact']);
         let subDiv = this.create('div', ['contactName'], name);
         div.appendChild(subDiv);
@@ -31,6 +31,9 @@ const element = {
         subDiv = this.create('div', ['contactNumber'], number);
         div.appendChild(subDiv);
         subDiv = this.create('div', ['contactEmail'], email);
+        div.appendChild(subDiv);
+        subDiv = this.create('div', ['contactPicture']);
+        subDiv.style.backgroundImage = "url('../src/assets/" + picUrl + "')";
         div.appendChild(subDiv);
         return div;
     },
