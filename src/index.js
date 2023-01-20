@@ -1,3 +1,4 @@
+import './style.css';
 import getHomeContent from './home.js';
 import getMenuContent from './menu.js';
 import getContactContent from './contact.js';
@@ -48,16 +49,3 @@ tabs.contact.content = getContactContent();
 // INIT
 clearContent();
 addContent(tabs.home);
-
-// DEBUG
-console.log(tabs);
-console.log(content);
-console.log(tabs.home.content);
-
-// TODO attribute authors
-// Manager Profile Pic
-// <a href="https://www.flaticon.com/free-icons/woman" title="woman icons">Woman icons created by Freepik - Flaticon</a>
-// Chef Profile Pic
-// <a href="https://www.flaticon.com/free-icons/female" title="female icons">Female icons created by Prosymbols Premium - Flaticon</a>
-// Waiter Profile Pic
-// <a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Vectors Market - Flaticon</a>

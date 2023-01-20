@@ -17,7 +17,7 @@ body {
 /* ================================================================= */
 
 .container.header {
-    background-image: url("../dist/vintage_paper.jpg");
+    /* background-image: url("../dist/vintage_paper.jpg"); */
     background-position: bottom;
     background-size: cover;
 
@@ -43,7 +43,7 @@ body {
 /* ================================================================= */
 
 .container.main {
-    background-image: url("../dist/samosa_platter.jpg");
+    background-image: url("./assets/samosa_platter.jpg");
     background-position: center center;
     background-size: cover;
 
@@ -140,7 +140,7 @@ body {
     justify-self: end;
     width: 80px;
     height: 80px;
-    background-image: url("../src/assets/managerProfile.png");
+    /* background-image: url("../src/assets/managerProfile.png"); */
     background-position: center;
     background-size: cover;
     border-radius: 80px;
@@ -174,7 +174,7 @@ li {list-style: none;}
 /* ================================================================= */
 
 .container.footer {
-    background-image: url("../dist/vintage_paper.jpg");
+    /* background-image: url("../dist/vintage_paper.jpg"); */
     background-position: top;
     background-size: cover;
 

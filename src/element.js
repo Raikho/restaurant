@@ -17,7 +17,7 @@ const element = {
         subDiv = this.create('div', ['price'], price);
         div.appendChild(subDiv);
         subDiv = this.create('div', ['pic']);
-        subDiv.style.backgroundImage = "url('../src/assets/" + picUrl + "')";
+        subDiv.style.backgroundImage = "url('" + picUrl + "')";
 
         div.appendChild(subDiv);
         return div;
@@ -33,12 +33,10 @@ const element = {
         subDiv = this.create('div', ['contactEmail'], email);
         div.appendChild(subDiv);
         subDiv = this.create('div', ['contactPicture']);
-        subDiv.style.backgroundImage = "url('../src/assets/" + picUrl + "')";
+        subDiv.style.backgroundImage = "url('" + picUrl + "')";
         div.appendChild(subDiv);
         return div;
     },
 }
 
 export {element}
-
-
