@@ -3,12 +3,14 @@
     --teal: #0d9488;
     --lime: #65a30d;
     --offwhite: #f1f5f9;
+    --offwhiteAlpha: #f1f5f988;
     --gray: #64748b;
+    --darkGray: #1f2937;
 }
 
 body {
     background-color: var(--darkBlue);
-    color: #1f2937;
+    color: var(--darkGray);
     font-family: Cambria;
     font-size: 20px;
     font-weight: 700;
@@ -18,37 +20,39 @@ body {
     margin: 0 0;
 
     display: grid;
-    grid-template-rows: 20fr 70fr 10fr;
+    grid-template-rows: 10vh 85vh 5vh;
 }
 
 /* ============================== Top ============================== */
 /* ================================================================= */
 
 .container.header {
-    /* background-image: url("../dist/vintage_paper.jpg"); */
-    background-position: bottom;
-    background-size: cover;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.container.header>.tab {
+.tab {
     width: 80px;
     padding: 5px;
+
+    color: var(--offwhite);
     font-family: arial;
     font-weight: 400;
-    color: var(--offwhite);
-    border: 2px solid #0c4a6e44;
-    border-radius: 5px;
     text-align: center;
+
+    border: 2px solid #0c4a6e33;
+    border-radius: 5px;
 }
 
+.tab[data-selected="false"] {color: var(--offwhiteAlpha);}
 .tab[data-selected="true"] {background-color: var(--lime);}
-.tab[data-selected="false"]:hover {background-color:  var(--teal);}
-.tab:active {backdrop-filter: brightness(1.25);}
+.tab[data-selected="false"]:hover {
+    background-color:  var(--teal);
+    color: var(--offwhite);
+}
+.tab:active {backdrop-filter: brightness(2.25);}
 
 /* ============================== Main ============================= */
 /* ================================================================= */
@@ -64,8 +68,8 @@ body {
 }
 
 .content.main {
-    width: 500px;
-    height: 700px;
+    width: min(500px, 80vw);
+    height: 70vh;
     overflow-y: scroll;
 
     background-color: #ccc3;
@@ -185,10 +189,6 @@ li {list-style: none;}
 /* ================================================================= */
 
 .container.footer {
-    /* background-image: url("../dist/vintage_paper.jpg"); */
-    background-position: top;
-    background-size: cover;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
