@@ -1,5 +1,13 @@
+:root {
+    --darkBlue: #0f172a;
+    --teal: #0d9488;
+    --lime: #65a30d;
+    --offwhite: #f1f5f9;
+    --gray: #64748b;
+}
+
 body {
-    background-color: darkslategray;
+    background-color: var(--darkBlue);
     color: #1f2937;
     font-family: Cambria;
     font-size: 20px;
@@ -10,7 +18,7 @@ body {
     margin: 0 0;
 
     display: grid;
-    grid-template-rows: 2fr 27fr 1fr;
+    grid-template-rows: 20fr 70fr 10fr;
 }
 
 /* ============================== Top ============================== */
@@ -30,13 +38,16 @@ body {
 .container.header>.tab {
     width: 80px;
     padding: 5px;
-    border: 2px solid #0c4a6e;
+    font-family: arial;
+    font-weight: 400;
+    color: var(--offwhite);
+    border: 2px solid #0c4a6e44;
     border-radius: 5px;
     text-align: center;
 }
 
-.tab[data-selected="true"] {background-color: goldenrod;}
-.tab[data-selected="false"]:hover {background-color:  #ffffff33;}
+.tab[data-selected="true"] {background-color: var(--lime);}
+.tab[data-selected="false"]:hover {background-color:  var(--teal);}
 .tab:active {backdrop-filter: brightness(1.25);}
 
 /* ============================== Main ============================= */
@@ -185,7 +196,7 @@ li {list-style: none;}
     padding: 0 20px;
 }
 a {
-    color: black;
+    color: var(--gray);
     font-size: 12px;
     font-weight: 400;
     text-decoration: none;
