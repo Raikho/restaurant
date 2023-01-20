@@ -97,11 +97,28 @@ body {
 .card {
     background-color: #ccc6;
     padding: 20px;
-    width: 240px;
+    width: min(240px, 40vw);
     text-align: center;
 
     border-radius: 4px;
     box-shadow: 4px 4px 8px #0003;
+}
+.title {
+    width: min(360px, 60vw);
+    font-family: georgia;
+    font-size: 48px;
+    font-weight: 1000;
+}
+.subtitle {
+    width: min(240px, 40vw);
+    height: 20px;
+    font-family: georgia;
+    font-size: 28px;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .item {
@@ -127,8 +144,8 @@ body {
 .item>.pic {
     grid-area: pic;
     justify-self: end;
-    width: 150px;
-    height: 100px;
+    width: min(150px, 30vw);
+    height: min(100px, 20vw);
     background-position: center;
     background-size: cover;
     border-radius: 8px;
@@ -162,20 +179,6 @@ body {
     border-radius: 80px;
     box-shadow: 4px 4px 4px #0003;
 
-}
-
-.title {
-    width: 360px;
-    font-family: georgia;
-    font-size: 48px;
-    font-weight: 1000;
-}
-
-.subtitle {
-    width: 240px;
-    font-family: georgia;
-    font-size: 32px;
-    font-weight: 700;
 }
 
 .smaller {font-size: 18px}
